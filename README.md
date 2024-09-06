@@ -26,6 +26,29 @@ cd PitAlloc
 g++ -o pitalloc pitalloc.cc -std=c++11
 ```
 
+### Usage
+
+Below is an example of how to use PitAlloc:
+
+```c++
+
+#include "shim_cpp_exports.h"
+
+int main() {
+    // Allocate memory using overridden new operator
+    int* ptr = new int[10];
+
+    // Use allocated memory
+    // ...
+
+    // Free allocated memory using overridden delete operator
+    delete[] ptr;
+
+    return 0;
+}
+
+```
+
 ## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request for any improvements or bug fixes.
 

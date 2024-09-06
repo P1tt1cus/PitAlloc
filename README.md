@@ -1,4 +1,4 @@
-# PitAlloc
+C# PitAlloc
 
 PitAlloc is a basic memory allocator written in C++ that uses a bucket system. It is inspired by partition alloc and is currently a Proof of Concept (PoC).
 
@@ -23,7 +23,7 @@ To compile the project, use the following commands in your terminal:
 ```sh
 git clone https://github.com/P1tt1cus/PitAlloc.git
 cd PitAlloc
-g++ -o pitalloc pitalloc.cc -std=c++11
+clang++ -o *.cc -std=c++11
 ```
 
 ### Usage
